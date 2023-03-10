@@ -244,7 +244,7 @@ header {
     margin-top: 76px;
 }
 .services__grid-body-item {
-    width: 295px;
+    width: 299px;
     height: 330px;
     border: 2px solid #E6E6E6;
 }
@@ -305,4 +305,105 @@ header {
     .services__grid-body {
         grid-template-columns: repeat(1, 3fr);
     }
+}
+/* work */
+.work {
+    background-image: url(../img/work-bg.png);
+    height: 495px;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.work__text {
+    margin: 0 auto;
+    padding-top: 120px;
+    font-family: 'OpenSans';
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    max-width: 350px;
+    width: 100%;
+    color: var(--color-grey);
+}
+.work__button {
+    width: 255px;
+    height: 40px;
+    border: none;
+    background-color: var(--color-blue);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    display: block;
+    margin: 25px auto 0 auto;
+}
+/* request */
+.request {
+    background-color: #171819;
+    height: 100px;
+}
+.request__flex {
+    display: flex;
+    justify-content: space-around;
+}
+.request__h2 {
+    color: var(--color-white);
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.846154px;
+    margin-top: 35px;
+    margin-right: 70px;
+}
+.request__input {
+    display: flex;
+
+}
+.request__input-int {
+    width: 250px;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+}
+.request__button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: var(--color-blue);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    display: block;
+    margin: 30px auto 0 auto;
+}
+@media screen and (max-width: 750px) {
+    .request__flex {
+        display: contents;
+
+    }
+    .request__h2 {
+        padding-top: 10px;
+        margin: 0;
+    }
+    .request__input {
+        padding-top: 10px;
+        justify-content: center;
+        margin: 0 10px;
+    }
+    .request__input-int {
+    margin: 0;
+}
+.request__button {
+    margin: 0;
+}
+}
+/* footer */
+footer {
+    background-color: #171819;
+    height: 299px;
 }
