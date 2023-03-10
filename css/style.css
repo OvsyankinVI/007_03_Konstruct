@@ -106,7 +106,7 @@ header {
     }
     .nav__flex-img {
         display: block;
-        margin: 10px 0 15px 10px;
+        margin: 0 10px 0 10px;
     }
     /* .nav__flex-bar {
         margin-left: auto;
@@ -175,12 +175,14 @@ header {
 }
 @media screen and (max-width: 1000px){
     .about__flex {
-        margin: 87px 15px 0 15px;
+        margin: 30px 15px 0 15px;
         grid-template-columns: repeat(1, 2fr);
         gap: 22px;
     }
     .about__flex-text {
-    width: 100%;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
     }
     .about__flex-grid {
         display: grid;
@@ -194,7 +196,6 @@ header {
         width: 98px;
         height: 157px;
     }
-    
 }
 /* Services */
 .services__grid-head {
@@ -233,4 +234,75 @@ header {
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.5px;
+    margin-left: 30px;
+}
+.services__grid-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 27px;
+    justify-items: center;
+    margin-top: 76px;
+}
+.services__grid-body-item {
+    width: 295px;
+    height: 330px;
+    border: 2px solid #E6E6E6;
+}
+.services__grid-body-item-img {
+    width: 71px;
+    height: 75px;
+    margin-top: 38px;
+    margin-left: 23px;
+}
+.services__grid-body-item-h2 {
+    margin: 25px 22px 0 23px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+    color: var(--color-grey);
+    text-transform: uppercase;
+}
+.services__grid-body-item-p {
+    margin: 13px 22px 39px 23px;
+    color: var(--color-grey);
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+}
+@media screen and (max-width: 1000px){
+    .services__grid-body {
+        grid-template-columns: repeat(2, 2fr);
+        margin-top: 20px;
+    }
+    .services__grid-head {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .left {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .services__grid-head .chapter-name__h2 {
+        padding-right: 0;
+        padding-top: 50px;
+    }
+    .services__grid-head {
+        display: contents;
+        
+    }
+    .services__p {
+        margin-top: 15px;
+        width: 60%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .services__button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 630px){
+    .services__grid-body {
+        grid-template-columns: repeat(1, 3fr);
+    }
 }
