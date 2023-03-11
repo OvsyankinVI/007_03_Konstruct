@@ -1,6 +1,7 @@
 /* Normalize */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *::after, *::before {
     box-sizing: inherit;
@@ -74,7 +75,10 @@ header {
 .nav {
     border-bottom: 1px solid #E6E6E6;
     height: 65px;
-    display: block;
+    position: sticky;
+    top: -1px;
+    background-color: #fff;
+    z-index: 2;
 }
 .nav__flex {
     display: flex;
@@ -119,7 +123,8 @@ header {
     }
     .nav__flex-img {
         display: block;
-        margin: 10px auto 15px auto;
+        padding: 10px auto 10px auto;
+        margin: 0 auto;
     }
     .nav__flex-bar {
         margin: 0 auto;
@@ -449,9 +454,10 @@ header {
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(1, 5fr);
+    margin-top: 20px;
 }
 .contact__a {
-    padding-top: 20px;
+    
     margin: 0;
     height: 25px;
     color: #fff;
