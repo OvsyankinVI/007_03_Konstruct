@@ -74,6 +74,7 @@ header {
 .nav {
     border-bottom: 1px solid #E6E6E6;
     height: 65px;
+    display: block;
 }
 .nav__flex {
     display: flex;
@@ -402,8 +403,133 @@ header {
     margin: 0;
 }
 }
+/* Contact */
+.contact {
+    background-color: #141A20;
+    min-height: 240px;
+}
+.contact__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.contact__flex-item-company {
+    width: 254px;
+    padding-top: 48px;
+}
+.contact__flex-item-name {
+    color: #fff;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.846154px;
+    text-transform: uppercase;
+}
+.contact__img {
+    padding-top: 18px;
+    margin: 0;
+}
+.company__p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+    padding-top: 17px;
+}
+.contact__flex-item-grid {
+    padding-top: 48px;
+    margin-left: 72px;
+}
+
+.contact__flex-item-grid-i {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 262px;
+
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+}
+.contact__a {
+    padding-top: 20px;
+    margin: 0;
+    height: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    text-decoration: none;
+}
+.contact__flex-item-adres {
+    padding-top: 48px;
+    width: 141px;
+    margin-left: 57px;
+}
+.contact__flex-item-adres-p {
+    margin-top: 15px;
+}
+.contact__p {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+.contact__flex-item-img a {
+/*     width: 13px;*/
+    height: 13px; 
+}
+.contact__flex-item-img {
+    padding-top: 48px;
+    width: 87px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 46px;
+}
+.pril {
+    color: #fff;
+}
+.contact__a:hover {
+    color: var(--color-blue);
+}
+@media screen and (max-width: 1000px){
+    .contact__flex {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .contact__flex-item-adres {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 810px){
+    .contact__flex-item-grid, .company__p {
+        display: none;
+    }
+    .contact__flex-item-company {
+        width: 150px;
+    }
+    .contact__flex-item-img {
+        margin-left: 20px;
+    }
+}
 /* footer */
 footer {
-    background-color: #171819;
-    height: 299px;
+    background-color: #000;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.footer__p {
+    width: 316px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 10px;
 }
